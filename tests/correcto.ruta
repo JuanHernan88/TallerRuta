@@ -1,0 +1,59 @@
+
+// Programa integral de prueba del lenguaje Ruta
+
+robot Tito
+
+// Variables y asignaciones
+speed = 2
+distancia = 10.5
+contador = (10 - 3) * 2 + distancia / 5
+limite = 30
+
+// Operaciones aritmeticas y movimiento
+forward 10 * speed + 5
+forward (distancia + 2) * 3
+forward 20 / 5 - 1
+turn right
+turn left
+
+// Ciclo con varias instrucciones
+repeat 4 {
+    forward speed * 2
+    turn right
+    contador = contador - 1
+}
+
+// Condicional con else
+if contador < limite then
+    forward 5
+    stop
+else
+    forward 1
+    turn left
+end
+
+// Condicional sin else
+if speed >= 2 then
+    speed = speed + 1
+    forward speed
+end
+
+// Otros operadores de comparacion
+if speed == 3 then
+    stop
+end
+
+if distancia != 0 then
+    forward distancia
+end
+
+if contador <= limite then
+    turn right
+end
+
+if limite > contador then
+    turn left
+end
+
+// Retorno a la base
+return base

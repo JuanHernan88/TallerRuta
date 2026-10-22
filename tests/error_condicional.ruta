@@ -1,0 +1,4 @@
+
+robot Tito
+if speed > 5 then
+    forward 10

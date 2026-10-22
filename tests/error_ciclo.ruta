@@ -1,0 +1,5 @@
+
+robot Tito
+repeat 4 {
+    forward 10
+    turn right
